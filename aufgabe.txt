@@ -1,0 +1,23 @@
+https://paste.thephp.cc/pbsflqsbb
+
+
+    Erstellen Sie die Geschäftslogik für ein Micro-Blog. Dabei gelten die folgenden Geschäftsregeln:
+     
+    * ein Benutzer ist durch einen Nicknamen und eine E-Mail-Adresse gekennzeichnet
+    * ein Benutzer kann jederzeit Nachrichten veröffentlichen
+    * eine Nachricht hat maximal 80 Zeichen und einen Zeitstempel
+    * um die Nachrichten anderer Benutzer zu sehen, kann ein Benutzer anderen Benutzern folgen
+    * ein Freundeskreis besteht aus einem Benutzer und allen Benutzern, denen er folgt
+    * jeder Benutzer hat eine Timeline, welche alle Nachrichten seines Freundeskreises enthält
+    * ein Benutzer kann andere Benutzer sperren, so dass diese ihm nicht mehr folgen können
+    * Benutzer können aus dem Freundeskreis wieder entfernt werden
+    * eine Timeline darf zu jedem Zeitpunkt nur Nachrichten aus dem Freundeskreis enthalten
+    * bei der Ausgabe sollen die Nachrichten in einer Timeline nach Zeitstempel sortiert angezeigt werden
+     
+    Programmieren Sie objektorientiert in PHP. Es dürfen keine Frameworks oder Bibliotheken von Drittanbietern verwendet werden. Schreiben Sie Unit-Tests für den erstellten Code und streben Sie dabei 100% Line Coverage an. Verwenden Sie geeignete @covers und @uses-Annotationen in Ihren Testklassen.
+    Verwenden Sie keine Zeit auf die Formatierung von Ausgaben. var_dump() genügt völlig.
+    Es ist nicht notwendig, dass Sie die Aufgabe vollständig lösen. Achten Sie aber darauf, dass der erstellte Programmcode nur fertige und funktionierende Features beinhaltet.
+    Implementieren Sie Features mit höherem Geschäftswert (business value) zuerst.
+    Sofern Sie Teile der Aufgabenstellung nicht vollständig verstehen oder die Spezifikation Lücken aufweist, treffen Sie geeignete Annahmen und dokumentieren Sie diese.
+    Implementieren Sie nur Features, die auch explizit in der Aufgabe verlangt sind.
+
