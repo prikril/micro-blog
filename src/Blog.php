@@ -3,42 +3,34 @@
 /**
  * Created by PhpStorm.
  * User: Dominik
- * Date: 23.10.2015
- * Time: 14:43
  */
 class Blog
 {
     private $name;
-    private $artikel;
-    private $eigentuemer;
-    private $autoren;
+    private $owner;
+    private $posts = [];
 
-    public function __construct(String $name, Benutzer $eigentuemer) {
+    public function __construct(String $name, User $owner) {
         $this->name = $name;
-        $this->articles = new ArtikelCollection();
-        $this->eigentuemer = $eigentuemer;
-        $this->autoren = new BenutzerCollection();
+        $this->owner = $owner;
     }
 
-    public function eigentuemer() {
-        return $this->eigentuemer;
+    public function getName() {
+        return $this->name;
     }
 
-    public function artikelVeroeffentlichen(Benutzer $benutzer, blabla $artikel ) {
-        if ($this->benutzerIstEigentuemer($benutzer) || $this->benutzer ) {
-            $this->artikel->add($artikel);
-        } else {
-            // entspr. Exception schmeißen
-            echo("Benuzer darf nicht veröffentlichen.");
-        }
+    public function getOwner() {
+        return $this->owner;
     }
 
-    public function benutzerIstEigentuemer(Benutzer $benutzer) {
-        return $this->eigentuemer->equals($benutzer);
+    public function addPost($post)
+    {
+        array_push($this->posts, $post);
     }
 
-    private function  benutzerIstAutor(Benutzer $benutzer) {
-        return $this->autoren->contains($benutzer);
+    public function getPosts()
+    {
+        return $this->posts;
     }
 
 }
